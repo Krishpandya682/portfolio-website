@@ -1,0 +1,9 @@
+$mainColor: black;
+$secondaryColor : white;
+$width: 770px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+     }
+}

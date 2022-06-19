@@ -1,0 +1,14 @@
+@import "../../global.scss";
+
+.personal_projects{
+    background-color: rgb(221, 49, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    li{
+        list-style: none;
+    }
+
+}

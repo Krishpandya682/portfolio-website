@@ -3,7 +3,7 @@
 Card{
     background-color: red;
 }
-.css-1nieira-MuiPaper-root-MuiCard-root{
+.MuiPaper-root-MuiCard-root{
 align-self: center;
 justify-self: end;
 flex-direction: column;
@@ -64,7 +64,7 @@ flex-direction: column;
         overflow: hidden;
         height: 50%;
         justify-content: center;
-        .css-mmuob9-MuiCardMedia-root{
+        .MuiCardMedia-root{
             object-fit: contain; 
             padding: 2px;
             border-radius: 5px;
@@ -76,7 +76,7 @@ flex-direction: column;
         overflow: hidden;
         height: 50%;
         justify-content: center;
-        .css-mmuob9-MuiCardMedia-root{
+        .MuiCardMedia-root{
             object-fit: contain; 
             padding: 2px;
             border-radius: 5px;
@@ -117,9 +117,7 @@ flex-direction: column;
                 }
             }
         }
-        .css-1t6e9jv-MuiCardActions-root{
-            background-color: maroon;
-
+        .MuiCardActions-root{
             padding-right: 30px;
             justify-content: end;
             

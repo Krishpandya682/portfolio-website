@@ -1,25 +1,49 @@
+@import "../../global.scss";
+
+Card{
+    background-color: red;
+}
 .css-1nieira-MuiPaper-root-MuiCard-root{
-    display: 'flex';
-    maxHeight: "70%";
-    maxWidth: "80%";
+align-self: center;
+justify-self: end;
+flex-direction: column;
+// @include mobile{
+//     flex-direction: column;
+// }
 }
 
 .media {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     // gap: 10px;
-    align-items: flex-end;
-    width: 90%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+    object-fit: contain;
     &:hover{
-            
+        cursor: pointer;
         .video{
-            display: flex;  
+            
+            display: flex; 
+            align-items: center;
+            justify-content: center;
             overflow: hidden;
+            height: 100%;
+            width: 100%;
+            video{
+                height: 95%;
+                width: 95%;
+            }
             img{
-                size: 10%;
+                height: 100%;
+            object-fit: contain; 
+                // size: 10%;
             }
         }
-
+        .row{
+            display: none;
+        }
         .row1{
             display: none;
             
@@ -32,19 +56,32 @@
     }
     .video{
         display: none;
+        height: 100%;
+        width: 100%;
     }
-
     .row1{
         display: flex;
-        gap: 10px;
         overflow: hidden;
-        
+        height: 50%;
+        justify-content: center;
+        .css-mmuob9-MuiCardMedia-root{
+            object-fit: contain; 
+            padding: 2px;
+            border-radius: 5px;
+        }
     }
 
     .row2{
         display: flex;
         overflow: hidden;
-        
+        height: 50%;
+        justify-content: center;
+        .css-mmuob9-MuiCardMedia-root{
+            object-fit: contain; 
+            padding: 2px;
+            border-radius: 5px;
+        }
+ 
     }
 }
 
@@ -53,18 +90,39 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 50%;
+    
     .top{
         padding: 10px 10px;
         justify-content: center;
         // background-color: red;
+        .tags{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 10px;
+            .tag{
+                padding: 0 3px;
+            }
+        }
     }
     .bottom{
         // background-color: green;
         padding-bottom: 30px;
+        .buttons{
+            a{
+                Button{
+                    object{
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
         .css-1t6e9jv-MuiCardActions-root{
             // background-color: maroon;
+
             padding-right: 30px;
             justify-content: end;
+            
         }
     }
 }

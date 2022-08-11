@@ -2,7 +2,7 @@ import Topbar from "./components/topbar/Topbar"
 import Intro from "./components/intro/Intro"
 import Education from "./components/education/Education"
 import Skills from "./components/skills/Skills"
-import Projects from "./components/personal_projects/Personal_projects"
+import PersonalProjects from "./components/personal_projects/Personal_projects"
 import WorkExperience from "./components/work_experience/Work_experience"
 import Extracurricular from "./components/extracurricular/Extracurricular"
 import Contact from "./components/contact/Contact"
@@ -17,14 +17,14 @@ function App() {
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
-    
+
         <Intro />
-        <Education />
-        <Skills />
-        <Projects />
-        <WorkExperience />
-        <Extracurricular />
-        <Contact />
+        {/* <Education /> */}
+        {/* <Skills /> */}
+        <PersonalProjects />
+        {/* <WorkExperience /> */}
+        {/* <Extracurricular /> */}
+        {/* <Contact /> */}
       </div>
     </div>
   );

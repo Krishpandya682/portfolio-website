@@ -8,7 +8,7 @@ export default function Intro(props) {
     // useEffect(() => {
     //           init(textRef.current, { showCursor: false, strings: ['Use with React.js!', 'Yeah!' ] })     
     // }, [])
-
+    
     return (
         <div className='intro' id="intro">
             <div className="left">

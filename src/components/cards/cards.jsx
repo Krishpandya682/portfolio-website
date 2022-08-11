@@ -8,43 +8,74 @@ import Typography from '@mui/material/Typography';
 import "./cards.scss"
 import { display } from '@mui/system';
 import { Box } from '@material-ui/core';
+import { TagFacesSharp } from '@material-ui/icons';
 
-export default function MediaCard() {
+export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
+    // window.addEventListener("resize", updateDimensions)
+    // const updateDimensions = () => {
+    //     width = window.innerWidth;
+    // }
+    var width;
+    var mobile_size;
+    const updateDimensions = () => {
+        width = window.innerWidth;
+        console.log(width)
+        mobile_size = width < 770;
+        console.log(mobile_size);
+    }
+
+
+    window.addEventListener("resize", updateDimensions)
+    var title = props.title;
+    var description = props.description;
+    var img1 = props.img1;
+    var img2 = props.img2;
+    var img3 = props.img3;
+    var img4 = props.img4;
+    var vid = props.vid;
+    var btn1 = props.btn1;
+    var btn2 = props.btn2;
+    var btnLink1 = props.btnLink1;
+    var btnLink2 = props.btnLink2;
+    var tags = props.tags;
     return (
-        <Card sx={{ height: "70%", maxWidth: "80%", display: 'flex' }}>
+        <Card sx={{ height: "70%", maxWidth: "80%", display: 'flex', flexDirection: '' + (mobile_size && 'column') }}>
             <div className="media">
                 <div className="video">
-                    <img src="./assets/man.png" alt="" height='400' width='400' />
+                    <video autoPlay loop muted>
+                        <source src={'./assets/' + vid} type='video/mp4' />
+                    </video>
                 </div>
+
                 <div className="row1">
                     <CardMedia
                         component="img"
                         // height="400"
-                        sx={{ padding_left: 1 }}
-                        image="./assets/man.png"
-                        alt="man" />
+                        sx={{ padding_left: 1, object_fit: "contain" }}
+                        image={"./assets/" + img1 + ".png"}
+                        alt={img1} />
 
                     <CardMedia
                         component="img"
                         // height="400"
-                        sx={{ padding_left: 1 }}
-                        image="./assets/man.png"
-                        alt="man" />
+                        sx={{ padding_left: 1, object_fit: "contain" }}
+                        image={"./assets/" + img2 + ".png"}
+                        alt={img2} />
                 </div>
                 <div className="row2">
                     <CardMedia
                         component="img"
                         // height="400"
-                        sx={{ padding_left: 1 }}
-                        image="./assets/man.png"
-                        alt="man" />
+                        sx={{ padding_left: 1, object_fit: "contain" }}
+                        image={"./assets/" + img3 + ".png"}
+                        alt={img3} />
 
                     <CardMedia
                         component="img"
                         // height="400"
-                        sx={{ padding_left: 1 }}
-                        image="./assets/man.png"
-                        alt="man" />
+                        sx={{ padding_left: 1, object_fit: "contain" }}
+                        image={"./assets/" + img4 + ".png"}
+                        alt={img4} />
                 </div>
             </div>
             <div className="content">
@@ -52,18 +83,30 @@ export default function MediaCard() {
                 <div className="top">
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div">
-                            Lizard
+                            {title}
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000
-                            species, ranging across all continents except Antarctica
+                            {description}
                         </Typography>
                     </CardContent>
+
+                    <div className="tags">
+
+                        {tags.map(function (tag) {
+                            return <div className="tag"><img src={tag} alt="" /></div>
+                        })}
+                    </div>
                 </div>
                 <div className="bottom">
                     <CardActions>
-                        <Button size="small">Share</Button>
-                        <Button size="small">Learn More</Button>
+                        <div className="buttons">
+                            <a href={btnLink1} style={{ textDecoration: 'none' }} target="_blank">
+                                <Button size="small">{btn1}</Button>
+                            </a>
+                            <a href={btnLink2} style={{ textDecoration: 'none' }} target="_blank">
+                                <Button size="small">{btn2}</Button>
+                            </a>
+                        </div>
                     </CardActions>
                 </div>
             </div>

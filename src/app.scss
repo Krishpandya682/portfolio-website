@@ -4,12 +4,12 @@
 
 
     .sections{
-        width: 100%;
+        // width: 100%;
         height: calc(100vh - 70px);
         background-color: red;
         position: relative;
         top: 70px;
-        scroll-behavior: smooth;
+        scroll-behavior: smooth !important;
         scroll-snap-type: y mandatory;
         scrollbar-width: none; //for firefox
         &::-webkit-scrollbar{
@@ -20,5 +20,10 @@
             height: calc(100vh - 70px);
             scroll-snap-align: start;
         }
+    
+        &.personal_projects{
+            overflow-x: scroll;
+        }
+    
     }
 }

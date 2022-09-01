@@ -8,7 +8,7 @@ export default function Intro(props) {
     // useEffect(() => {
     //           init(textRef.current, { showCursor: false, strings: ['Use with React.js!', 'Yeah!' ] })     
     // }, [])
-    
+
     return (
         <div className='intro' id="intro">
             <div className="left">
@@ -21,15 +21,15 @@ export default function Intro(props) {
                     <h2>Hi There I'm</h2>
                     <h1>Krish Pandya</h1>
                     {/* <h3><span ref={textRef}></span></h3> */}
-                    <h3>  <Typewriter 
-           
-                        options={{ 
-                            strings:["Developer", "Student", "Text3"],
-                            autoStart:true,
-                            delay:50,
-                            loop:true
+                    <h3>  <Typewriter
+
+                        options={{
+                            strings: ["Developer", "Student"],
+                            autoStart: true,
+                            delay: 50,
+                            loop: true
                         }}
-           
+
                     />
                     </h3>
                 </div>

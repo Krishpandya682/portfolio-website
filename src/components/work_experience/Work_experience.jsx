@@ -1,5 +1,5 @@
 import "./work_experience.scss"
-
+import React, { Component }  from 'react';
 export default function WorkExperience(props) {
     
 

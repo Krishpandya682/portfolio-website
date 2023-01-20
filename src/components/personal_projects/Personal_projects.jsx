@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import "./personal_projects.scss"
 import Card from "../cards/cards"
 export default function PersonalProjects(props) {
@@ -16,6 +17,7 @@ export default function PersonalProjects(props) {
 
     return (
         <div className="personal_projects" id="personal_projects">
+            <div className="title"><h1>Personal Projects</h1></div>
             <div class="horizontal-snap">
                 {/* <img src="https://picsum.photos/id/1067/640/640" />
                 <img src="https://picsum.photos/id/122/640/640" />
@@ -37,6 +39,7 @@ export default function PersonalProjects(props) {
                     btnLink1=""
                     btnLink2="https://github.com/Krishpandya682/scavenger_hunt"
                     tags={schTags}
+                    order = "0"
                 />
 
                 <Card title="FitCoin Token" description="This is the FitCoin Token Wallet WebApp"
@@ -46,6 +49,7 @@ export default function PersonalProjects(props) {
                     btnLink1="https://krishpandya682.github.io/FitCoinTokenSale/"
                     btnLink2="https://github.com/Krishpandya682/FitCoinTokenSale"
                     tags={ftcTags}
+                    order = "1"
                 />
 
             </div>

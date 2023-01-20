@@ -1,4 +1,5 @@
 import "./topbar.scss"
+import React, { Component }  from 'react';
 import {Person, Mail} from "@material-ui/icons" 
 export default function Topbar({menuOpen, setMenuOpen}) {
     

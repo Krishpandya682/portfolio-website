@@ -1,3 +1,4 @@
+import React, { Component }  from 'react';
 import "./intro.scss"
 import Typewriter from 'typewriter-effect'
 // import { useEffect, useRef } from "react"
@@ -13,7 +14,7 @@ export default function Intro(props) {
         <div className='intro' id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="./assets/man.png" alt="Display Pic" />
+                    {/* <img src="./assets/man.png" alt="Display Pic" /> */}
                 </div>
             </div>
             <div className="right">

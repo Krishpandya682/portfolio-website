@@ -1,4 +1,5 @@
 import "./education.scss"
+import React, { Component }  from 'react';
 export default function Education() {
     
 

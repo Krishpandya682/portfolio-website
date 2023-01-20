@@ -8,6 +8,7 @@ import Extracurricular from "./components/extracurricular/Extracurricular"
 import Contact from "./components/contact/Contact"
 import Menu from "./components/menu/Menu"
 import "./app.scss"
+import React, { Component }  from 'react';
 import { useState } from "react"
 
 function App() {
@@ -20,8 +21,8 @@ function App() {
 
         <Intro />
         {/* <Education /> */}
-        {/* <Skills /> */}
         <PersonalProjects />
+        <Skills />
         {/* <WorkExperience /> */}
         {/* <Extracurricular /> */}
         {/* <Contact /> */}

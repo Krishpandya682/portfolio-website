@@ -1,3 +1,17 @@
 .work_experience{
     background-color: lightgreen;
 }
+
+.jobCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jcrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}

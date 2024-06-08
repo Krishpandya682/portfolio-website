@@ -1,3 +1,18 @@
 .education{
-    background-color: gold;
+    background-image: url("../../../public/assets/umd2.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blurBg{
+    padding: 10rem;
+    border-radius: 10pt;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 90%;
+    width: 85%;
+    height: 85%;
 }

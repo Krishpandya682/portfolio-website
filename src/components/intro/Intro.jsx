@@ -14,7 +14,7 @@ export default function Intro(props) {
         <div className='intro' id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    {/* <img src="./assets/man.png" alt="Display Pic" /> */}
+                    <img src="./assets/krish.png" alt="Display Pic" />
                 </div>
             </div>
             <div className="right">

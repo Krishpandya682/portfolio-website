@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import list from './skill_list';
+import {sk_list, python} from './skill_list';
 import * as React from 'react';
 import { CRow,CCol,CCard,CCardBody,CCardTitle,CCardText,CButton, CListGroup,CListGroupItem } from '@coreui/react';
 import "./skills.scss";
@@ -39,9 +39,11 @@ export default function Skills(props) {
             <CRow>
                 {returnRow([["Programming Languages"]])}
             </CRow>
-
             <CRow>
-                {returnRow([["Kris","Isha","Seema","Jayesg"],[4,5,6],[7,8,9],[10,11,12]])}
+                {returnRow([["Programming Languages","Isha","Seema","Jayesg"],[python,4,5,6],[7,8,9],[10,11,12]])}
+            </CRow>
+            <CRow>
+                {returnRow([[],[]])}
             </CRow>
                 {/* <h2>Programming Languages</h2>
                     <ul>    

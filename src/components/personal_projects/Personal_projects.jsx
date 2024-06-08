@@ -36,7 +36,7 @@ export default function PersonalProjects(props) {
                     img1="sch1" img2="sch3" img3="sch2" img4="sch4" vid="sample-mp4-file.mp4"
                     btn1={<object data="assets/google-play.svg" width="30" height="30"> </object>}
                     btn2={<object data="assets/github.svg" width="40" height="40"> </object>}
-                    btnLink1=""
+                    btnLink1="https://play.google.com/store/apps/details?id=com.herokuapp.scavengerhuntapp682"
                     btnLink2="https://github.com/Krishpandya682/scavenger_hunt"
                     tags={schTags}
                     order = "0"

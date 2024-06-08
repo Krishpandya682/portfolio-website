@@ -10,24 +10,27 @@ import Menu from "./components/menu/Menu"
 import "./app.scss"
 import React, { Component }  from 'react';
 import { useState } from "react"
+import { AnimatePresence, } from "framer-motion"
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
+    <AnimatePresence>
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
 
         <Intro />
-        {/* <Education /> */}
+        <Education />
+        <WorkExperience />
         <PersonalProjects />
         <Skills />
-        {/* <WorkExperience /> */}
         {/* <Extracurricular /> */}
-        {/* <Contact /> */}
+        <Contact />
       </div>
     </div>
+    </AnimatePresence>
   );
 }
 

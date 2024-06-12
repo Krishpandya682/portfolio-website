@@ -1,120 +1,34 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { sk_list, python } from "./skill_list";
+import { sections } from "./skill_list";
 import * as React from "react";
-import {
-  CRow,
-  CCol,
-  CCard,
-  CCardBody,
-  CCardTitle,
-  CCardText,
-  CButton,
-  CListGroup,
-  CListGroupItem,
-} from "@coreui/react";
 import "./skills.scss";
 import Marquee from "react-fast-marquee";
 
-export default function Skills(props) {
-  function returnItems(items) {
-    var l = [];
-    items.forEach((i) => {
-      l.push(
-        <CListGroupItem
-          style={{
-            alignItems: "center",
-            justifyContent: "center",
-            display: "flex",
-          }}
-        >
-          {i}
-        </CListGroupItem>
-      );
-    });
-    return l;
-  }
-
-  function returnCard(items) {
-    return (
-      <CCard>
-        <CListGroup flush>{returnItems(items)}</CListGroup>
-      </CCard>
-    );
-  }
-
-  function returnRow(cards) {
-    var c = [];
-    cards.forEach((cardItems) => {
-      c.push(<CCol>{returnCard(cardItems)}</CCol>);
-    });
-    return c;
-  }
+export default function Skills() {
+  // Example data array
 
   return (
     <div>
-      <div className="h-10">
-        <Marquee
-          loop={0}
-          speed={50}
-          pauseOnHover={true}
-          gradient={true}
-          gradientWidth={100}
-        >
-          <div className="bg"> Text1</div>
-          <div className="bg"> Text2</div>
-          <div className="bg"> Text3</div>
-          <div className="bg"> Text4</div>
-          <div className="bg"> Text5</div>
-          <div className="bg"> Text6</div>
-          <div className="bg"> Text7</div>
-          <div className="bg"> Text8</div>
-          <div className="bg"> Text9</div>
-          <div className="bg"> Text10</div>
-          <div className="bg"> Text11</div>
-          <div className="bg"> Text12</div>
-          <div className="bg"> Text13</div>
-          <div className="bg"> Text14</div>
-          <div className="bg"> Text15</div>
-          <div className="bg"> Text16</div>
-          <div className="bg"> Text17</div>
-          <div className="bg"> Text18</div>
-          <div className="bg"> Text19</div>
-          <div className="bg"> Text20</div>
-          <div className="bg"> Text21</div>
-        </Marquee>
-      </div>
-      <div className="h-10">
-        <Marquee
-          loop={0}
-          speed={50}
-          pauseOnHover={true}
-          gradient={true}
-          gradientWidth={100}
-          direction="right"
-        >
-          <div className="bg"> Text1</div>
-          <div className="bg"> Text2</div>
-          <div className="bg"> Text3</div>
-          <div className="bg"> Text4</div>
-          <div className="bg"> Text5</div>
-          <div className="bg"> Text6</div>
-          <div className="bg"> Text7</div>
-          <div className="bg"> Text8</div>
-          <div className="bg"> Text9</div>
-          <div className="bg"> Text10</div>
-          <div className="bg"> Text11</div>
-          <div className="bg"> Text12</div>
-          <div className="bg"> Text13</div>
-          <div className="bg"> Text14</div>
-          <div className="bg"> Text15</div>
-          <div className="bg"> Text16</div>
-          <div className="bg"> Text17</div>
-          <div className="bg"> Text18</div>
-          <div className="bg"> Text19</div>
-          <div className="bg"> Text20</div>
-          <div className="bg"> Text21</div>
-        </Marquee>
-      </div>
+      {sections.map((section, index) => (
+        <div className="h-10" key={index}>
+         <div className="title">{section.title}</div>
+          <Marquee
+            loop={0}
+            speed={50}
+            pauseOnClick={true}
+            gradient={true}
+            gradientWidth={100}
+            direction={index % 2 === 0 ? "left" : "right"} // Alternating direction
+          >
+            {section.items.map((item, idx) => (
+              <div key={idx} className="bg">
+                <img src={item.url} className="icon" />
+                {item.name}
+              </div>
+            ))}
+          </Marquee>
+        </div>
+      ))}
     </div>
   );
   /*

@@ -1,29 +1,21 @@
-.cardgroup {
+.title {
+    display: none;
+    background-color: black;
+    color: white;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.skills {
-    padding: 2%;
-    background-color: rgb(255, 255, 255);
-
-    .title {
-        margin: 1%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .icon {
-        height: 10%;
-        width: 10%;
-    }
+    justify-content: center;
+    font-size: x-large;
 }
 
 
 .bg {
-    background-color: red;
+    // background-color: red;
     padding: 10px;
     margin: 10px;
+
+    .icon {
+        height: 40px;
+        margin: 10px;
+    }
 }

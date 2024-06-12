@@ -1,17 +1,50 @@
-.work_experience{
-    background-color: lightgreen;
+.timeline-container {
+
+    // background-image: url("../../../public/assets/umd2.jpg");
+    // background-color: red;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    width: 100vw;
+    position: relative;
+
 }
 
-.jobCard{
+
+.timeline-entry {
+    // background-color: blue;
+    // margin-top: 10%;
+    flex: 0 0 100vw;
+    scroll-snap-align: start;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    // padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
 }
 
-.jcrow{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+/* Specific background for the first entry */
+.timeline-entry:first-child {
+    background-image: url("../../../public/assets/timeline_start.svg");;
+    background-repeat: no-repeat;
+
+}
+
+/* Specific background for the last entry */
+.timeline-entry:last-child {
+    background-image: url("../../../public/assets/timeline_end.svg");;
+    background-repeat: no-repeat;
+
+}
+
+/* Default background for all other entries */
+.timeline-entry {
+    background-image: url("../../../public/assets/timeline_mid.svg");;
+    background-repeat: no-repeat;
 }

@@ -1,4 +1,3 @@
-import { Description } from "@material-ui/icons";
 import "./JobCard.scss"
 import React, { Component }  from 'react';
 export default function jobCard(props) {

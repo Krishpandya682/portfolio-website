@@ -1,18 +1,222 @@
-.education{
+.education {
     background-image: url("../../../public/assets/umd2.jpg");
+    background-size: cover;
+    /* Ensure the background image covers the entire container */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Do not repeat the background image */
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .left_panel {
+        position: relative;
+        /* Needed for absolute positioning of the child elements */
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Using RGBA for better text contrast and readability */
+        backdrop-filter: blur(5px);
+        /* Apply a blur effect to the background for readability */
+        border-top-right-radius: 10pt;
+        border-bottom-right-radius: 10pt;
+        height: 100%;
+        /* Ensures the panel takes full height of its container */
+        display: flex;
+        /* Using flex to ensure children can fill the height */
+        flex-direction: column;
+        /* Align children in a column */
+
+        .left-panel-content {
+            display: flex;
+            flex: 1;
+            /* This will make the content flexibly fill the space */
+            flex-direction: column;
+            /* Stack children vertically */
+            align-items: center;
+            /* Align items in the center horizontally */
+            text-align: center;
+            /* Center align text */
+            width: 100%;
+            /* Fill the width of the parent */
+            height: 100%;
+            /* Ensures it takes full height available */
+            position: relative;
+            /* Needed for absolute positioning of the download button */
+
+        }
+
+        .degree_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* Changed to center to maintain consistency with the container's alignment */
+            text-align: left;
+            /* Ensure text alignment is consistent */
+            width: 100%;
+            /* Ensure full width is used for alignment */
+            padding-top: 20px;
+
+            h1,
+            h2 {
+                margin: 4px 0;
+                /* Add space above and below headings */
+                color: white;
+                /* Slightly darker color for headings */
+            }
+
+            h1 {
+                font-size: 40px;
+                /* Larger font size for primary headings */
+                font-weight: 600;
+                /* Semi-bold font weight */
+            }
+
+            h2 {
+                font-size: 32px;
+                /* Smaller font size for secondary headings */
+                font-weight: normal;
+                /* Normal font weight */
+            }
+
+            h1.gpa {
+                font-size: 44px;
+                /* Slightly larger font size */
+                display: inline-block;
+                /* Make the GPA block inline */
+            }
+        }
+
+        .download-button {
+            position: absolute;
+            /* Absolutely position it within the .left-panel-content */
+            bottom: 10px;
+            /* 10px from the bottom */
+            right: 10px;
+            /* 10px from the right, placing it at the bottom-right corner */
+            padding: 8px 15px;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #c0c0c0;
+            /* Darker green on hover */
+        }
+
+    }
+
+    .coursework_section {
+        display: flex;
+        /* Use flexbox to layout the button and the list */
+        flex-direction: column;
+        /* Stack children vertically */
+        height: 100%;
+        /* Take up 100% of the parent height */
+        overflow-y: auto;
+        /* Make only the list part scrollable */
+
+    }
+
+    .expand-button {
+        margin-left: auto;
+        /* Align the button to the right */
+        margin-right: auto;
+        /* Center button horizontally at the top */
+        padding: 8px 12px;
+        background-color: white;
+        /* Bootstrap primary button color */
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 10;
+        /* Ensure the button is above the sliding panel */
+    }
+
+    .expand-button:hover {
+        background-color: #c0c0c0;
+        /* Darker shade for hover effect */
+    }
+
+    .coursework-list {
+        position: relative;
+        left: -700px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.8);
+        /* Using RGBA for better text contrast and readability */
+        backdrop-filter: blur(5px);
+        overflow-y: auto;
+        /* Enable scrolling within the list itself */
+        padding: 10px 10px;
+        /* Top and bottom padding inside the list */
+        height: 80%;
+        width: 80%;
+        transition: all 1s ease;
+
+        &.active {
+            left: 0;
+        }
+
+        .course {
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            /* Makes it clear that the course is clickable */
+            transition: background-color 0.2s ease;
+            /* Smooth transition for hover effect */
+        }
+
+        .course:hover {
+            background-color: #c0c0c0;
+            /* Lighter background on hover */
+        }
+
+        .course-details {
+            padding: 8px;
+            margin-top: 5px;
+            background-color: #f9f9f9;
+            /* Slightly different background for details */
+            border: 1px solid #ccc;
+            /* Subtle border for details area */
+            border-radius: 4px;
+        }
+
+    }
+
+
+
+
 }
 
-.blurBg{
+.blurBg {
+    backdrop-filter: blur(10px);
+    /* Stronger blur effect for better focus on foreground content */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* White background with higher opacity for readability */
+    padding: 40px;
+    /* Increased padding for a more pronounced content separation */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    /* Add shadow for depth and focus */
+
     padding: 10rem;
-    border-radius: 10pt;
+    border-top-right-radius: 10pt;
+    border-bottom-right-radius: 10pt;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 90%;
     width: 85%;
-    height: 85%;
+    height: 100%;
 }

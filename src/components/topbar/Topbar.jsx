@@ -1,6 +1,7 @@
 import "./topbar.scss"
 import React, { Component }  from 'react';
-import {Person, Mail, LocationOn} from "@material-ui/icons" 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 export default function Topbar({menuOpen, setMenuOpen}) {
     
 
@@ -10,20 +11,20 @@ export default function Topbar({menuOpen, setMenuOpen}) {
                 <div className="left">
                     <a href="#intro" className="logo">KP</a>
                     <div className="itemContainer">
-                        <Person className="icon"/>
+                        <FontAwesomeIcon icon={faUser} className="icon"/>
                         <span>
                             +1 301 219 9869 
                         </span>
                     </div>
                     <div className="itemContainer">
-                        <Mail className="icon"/>
+                        <FontAwesomeIcon icon={faEnvelope} className="icon"/>
                         <span>
                             krishjpandya@gmail.com
                         </span>
                     </div>
 
                     <div className="itemContainer">
-                        <LocationOn/>
+                        <FontAwesomeIcon icon={faMapMarkerAlt} className="icon"/>
                         <span>
                             College Park, MD
                         </span>

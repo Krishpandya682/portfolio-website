@@ -1,23 +1,29 @@
-
-.cardgroup{
-    display: flex ;
+.cardgroup {
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
-.skills{
+.skills {
     padding: 2%;
-    background-color: rgb(255, 255, 255);    
+    background-color: rgb(255, 255, 255);
 
-    .title{
+    .title {
         margin: 1%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .icon{
+    .icon {
         height: 10%;
-        width: 10%;    
+        width: 10%;
     }
+}
+
+
+.bg {
+    background-color: red;
+    padding: 10px;
+    margin: 10px;
 }

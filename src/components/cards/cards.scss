@@ -1,15 +1,16 @@
 @import "../../global.scss";
 
-Card{
+Card {
     background-color: red;
 }
-.MuiPaper-root-MuiCard-root{
-align-self: center;
-justify-self: end;
-flex-direction: column;
-// @include mobile{
-//     flex-direction: column;
-// }
+
+.MuiPaper-root-MuiCard-root {
+    align-self: center;
+    justify-self: end;
+    flex-direction: column;
+    // @include mobile{
+    //     flex-direction: column;
+    // }
 }
 
 .media {
@@ -24,106 +25,106 @@ flex-direction: column;
     justify-self: center;
     width: 60%;
     object-fit: contain;
-    &:hover{
-        cursor: pointer;
-        .video{
-            
-            display: flex; 
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            height: 100%;
-            width: 100%;
-            video{
-                height: 95%;
-                width: 95%;
-            }
-            img{
-                height: 100%;
-            object-fit: contain; 
-                // size: 10%;
-            }
-        }
-        .row{
-            display: none;
-        }
-        .row1{
-            display: none;
-            
-        }
 
-        .row2{
-            display: none;
-            
-        }
-    }
-    .video{
+
+    .video {
         display: none;
         height: 100%;
         width: 100%;
     }
-    .row1{
-        
+
+    .row1,
+    .row2 {
+
         display: flex;
         overflow: hidden;
         height: 50%;
         justify-content: center;
-        .MuiCardMedia-root{
-            object-fit: contain; 
+
+        .MuiCardMedia-root {
+            object-fit: contain;
             padding: 2px;
             border-radius: 5px;
         }
     }
 
-    .row2{
+
+}
+
+.hoverable:hover {
+    cursor: pointer;
+
+    .video {
+
         display: flex;
-        overflow: hidden;
-        height: 50%;
+        align-items: center;
         justify-content: center;
-        .MuiCardMedia-root{
-            object-fit: contain; 
-            padding: 2px;
-            border-radius: 5px;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+
+        video {
+            height: 95%;
+            width: 95%;
         }
- 
+
+        img {
+            height: 100%;
+            object-fit: contain;
+            // size: 10%;
+        }
+    }
+
+    .row,
+    .row1,
+    .row2 {
+        display: none;
     }
 }
 
-.content{
+
+.content {
     //background-color: rgba(0, 255, 229, 0.525);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 40%;
-    .top{
+
+    .top {
         padding: 10px 10px;
         justify-content: center;
+
         // background-color: red;
-        .tags{
+        .tags {
             display: flex;
             flex-wrap: wrap;
             padding: 10px 10px;
-            .tag{
+
+            .tag {
+                margin: 1px;
                 padding: 0 3px;
             }
         }
     }
-    .bottom{
+
+    .bottom {
         // background-color: green;
         padding-bottom: 30px;
-        .buttons{
-            a{
-                Button{
-                    object{
+
+        .buttons {
+            a {
+                Button {
+                    object {
                         pointer-events: none;
                     }
                 }
             }
         }
-        .MuiCardActions-root{
+
+        .MuiCardActions-root {
             padding-right: 30px;
             justify-content: end;
-            
+
         }
     }
 }

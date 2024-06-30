@@ -31,20 +31,27 @@
 
 /* Specific background for the first entry */
 .timeline-entry:first-child {
-    background-image: url("../../../public/assets/timeline_start.svg");;
+    background-image: url("../../../public/assets/timeline_start.svg");
     background-repeat: no-repeat;
-
+    background-size: 100% 100%; /* Ensures the image fits the element */
 }
 
 /* Specific background for the last entry */
 .timeline-entry:last-child {
-    background-image: url("../../../public/assets/timeline_end.svg");;
+    background-image: url("../../../public/assets/timeline_end.svg");
     background-repeat: no-repeat;
-
+    background-size: 100% 100%; /* Ensures the image fits the element */
 }
 
 /* Default background for all other entries */
-.timeline-entry {
-    background-image: url("../../../public/assets/timeline_mid.svg");;
+.timeline-entry:nth-child(odd) {
+    background-image: url("../../../public/assets/timeline_mid_top.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%; /* Ensures the image fits the element */
+}
+
+.timeline-entry:nth-child(even) {
+    background-image: url("../../../public/assets/timeline_mid_bottom.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Ensures the image fits the element */
 }

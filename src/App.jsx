@@ -11,6 +11,8 @@ import "./app.scss"
 import React, { Component }  from 'react';
 import { useState } from "react"
 import { AnimatePresence, } from "framer-motion"
+import Chatbot from "./components/chatbot/Chatbot"
+import Certificates from "./components/Certificates/certifications"
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -19,6 +21,7 @@ function App() {
     <div className="app">
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Chatbot></Chatbot>
       <div className="sections">
 
         <Intro />
@@ -28,6 +31,7 @@ function App() {
         <Skills />
         {/* <Extracurricular /> */}
         <Contact />
+        <Certificates/>
       </div>
     </div>
     </AnimatePresence>

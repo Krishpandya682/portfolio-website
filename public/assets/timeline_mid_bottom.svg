@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100px">
-    <line x1="0" y1="50" x2="100%" y2="50" stroke="#ccc" stroke-width="2" />
-    <circle cx="50%" cy="50" r="5" fill="blue" />
-    <text x="50%" y="40" fill="black" text-anchor="middle" font-size="12" dominant-baseline="middle">Mid</text>
+<svg width="1920" height="1000" viewBox="0 0 1920 1000" preserveAspectRatio="none" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <path d="M960 940C265.086 940 266.084 765.847 2.84314e-05 540" stroke="black" stroke-width="6" />
+    <path d="M960 940C1654.91 940 1653.92 765.847 1920 540" stroke="black" stroke-width="6" />
+    <path d="M-960 140C-265.086 140 -266.084 314.153 -2.84314e-05 540" stroke="black"
+        stroke-width="6" />
+    <path d="M2880 140C2185.09 140 2186.08 314.153 1920 540" stroke="black" stroke-width="6" />
+    <circle cx="960" cy="940" r="25" fill="#006895" />
 </svg>
+    

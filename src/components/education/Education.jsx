@@ -28,7 +28,7 @@ export default function Education() {
             <h1>Major in Computer Science</h1>
             <h2>Minor in Business Analytics</h2>
             <h1>2020 - 2024</h1>
-            <h1 className="gpa">GPA: 3.8</h1>
+            <h1 className="gpa">GPA: {gpa}</h1>
           </div>
           <div>
             <a

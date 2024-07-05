@@ -35,7 +35,7 @@ export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
   var btnLink2 = props.btnLink2;
   var tags = props.tags;
   var order = props.order;
-  if (order == "0") {
+  if (order === "0") {
     return (
       <Card
         sx={{

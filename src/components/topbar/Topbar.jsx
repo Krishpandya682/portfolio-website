@@ -1,5 +1,5 @@
 import "./topbar.scss"
-import React, { Component }  from 'react';
+import React  from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 export default function Topbar({menuOpen, setMenuOpen}) {

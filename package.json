@@ -5,26 +5,20 @@
   "proxy": "http://localhost:3000",
   "homepage": ".",
   "dependencies": {
-    "@coreui/coreui": "^4.2.6",
-    "@coreui/react": "^4.5.1",
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
-    "@mui/icons-material": "^5.15.19",
-    "@mui/material": "^5.15.19",
+    "@mui/material": "^5.15.21",
     "bootstrap": "^5.3.3",
-    "framer-motion": "^10.16.4",
-    "latest-version": "^7.0.0",
+    "framer-motion": "^11.2.13",
     "react": "^18.3.1",
-    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.3.1",
-    "react-fast-marquee": "^1.6.4",
-    "react-router-dom": "^6.16.0",
+    "react-fast-marquee": "^1.6.5",
+    "react-router-dom": "^6.24.1",
     "react-scripts": "^5.0.1",
-    "sass-loader": "^13.2.0",
-    "typewriter-effect": "^2.19.0"
+    "typewriter-effect": "^2.21.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -49,8 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "sass": "^1.57.1"
   }
 }

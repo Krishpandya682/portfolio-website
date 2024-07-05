@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./personal_projects.scss";
 import Card from "../cards/cards";
 import { cardData } from "./project_data";

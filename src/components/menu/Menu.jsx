@@ -1,5 +1,5 @@
 import "./menu.scss";
-import React, { Component } from "react";
+import React from "react";
 export default function Menu({ menuOpen, setMenuOpen }) {
   return (
     <div className={"menu " + (menuOpen && " active")}>

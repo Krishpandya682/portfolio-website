@@ -1,6 +1,5 @@
 import "./work_experience.scss";
 import React, { Component } from "react";
-import JobCard from "../JobCard/JobCard";
 import Marquee from "react-fast-marquee";
 import { jobs } from "./work_data";
 

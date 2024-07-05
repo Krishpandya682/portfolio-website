@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import "./intro.scss"
 import Typewriter from 'typewriter-effect'
 // import { useEffect, useRef } from "react"

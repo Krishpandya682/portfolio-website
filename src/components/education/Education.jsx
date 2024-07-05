@@ -2,7 +2,6 @@ import "./education.scss";
 import React, { useState } from "react";
 import { courses } from "./coursework_data";
 
-
 const gpa = 3.8;
 export default function Education() {
   const [showCourses, setShowCourses] = useState(false);
@@ -32,14 +31,13 @@ export default function Education() {
             <h1 className="gpa">GPA: 3.8</h1>
           </div>
           <div>
-            <button
-              href="/path/to/your/transcript.pdf"
+            <a
+              href="https://drive.google.com/file/d/1UZbityTpj43OY-1QL4TpIPhQeTZ2RdRo/view?usp=sharing"
               target="_blank"
-              download
               className="download-button"
             >
               Download Transcript
-            </button>
+            </a>
           </div>
         </div>
       </div>

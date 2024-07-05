@@ -25,7 +25,7 @@ export default function Intro(props) {
                     <h3>  <Typewriter
 
                         options={{
-                            strings: ["Developer", "Student"],
+                            strings: ["Software Engineer", "Algorithms TA", "Recent UMD Computer Science Grad"],
                             autoStart: true,
                             delay: 50,
                             loop: true

@@ -34,17 +34,35 @@
 
     .job-card {
         display: flex;
-        flex-direction: column;
         width: 100%;
         justify-content: center;
         align-items: center;
+        height: 100%;
 
         .top {
-            width: 100%;
-            height: 50%;
-            .icon {}
 
-            .year {}
+            width: 100%;
+            height: 30%;
+            display: flex;
+
+            .icon {
+                border-radius: 50%;
+                padding: 2px;
+
+                img {
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 50%;
+                    border: 1px solid black;
+
+                }
+            }
+
+            .year {
+
+                margin-bottom: 0;
+
+            }
 
             .job-title {}
 
@@ -53,32 +71,54 @@
 
         .bottom {
 
-            height: 50%;
+            height: 70%;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             width: 100%;
-            .skills {
+
+            .skills-list {
                 display: flex;
                 flex-direction: row;
-                width: 80%;
-
+                width: 75%;
+                padding: 2rem;
+                justify-content: center;
                 .tags {
                     display: flex;
                     flex-direction: row;
+                    .tag{
+                        object-fit: contain;
+                        img{
+                            margin : 2px
+                        }
+                    }
                 }
             }
 
             .description {
+                padding: 2rem;
+
                 .description-item {
                     width: 33.33%;
+
+                    .description-text-top {
+                        font-size: 18px;
+                    }
+
+                    .description-text-number {
+                        font-size: 40px;
+                    }
+
+                    .description-text-bottom {
+                        font-size: 18px;
+                    }
                 }
             }
         }
 
     }
 }
+
 
 /* Specific background for the first entry */
 .timeline-entry:first-child {
@@ -93,8 +133,40 @@
 /* Default background for all other entries */
 .timeline-entry:nth-child(odd) {
     background-image: url("../../../public/assets/timeline_mid_top.svg");
+
+    .job-card {
+
+        flex-direction: column;
+
+        .top {
+            padding-top: 30px;
+            flex-direction: column;
+            
+            .year {}
+        }
+        .bottom{
+
+            flex-direction: column;
+        }
+    }
 }
 
 .timeline-entry:nth-child(even) {
     background-image: url("../../../public/assets/timeline_mid_bottom.svg");
+
+    .job-card {
+
+        flex-direction: column-reverse;
+
+        .top {
+            height: fit-content;
+            margin-top: 20px;
+            padding-bottom: 75px;
+            flex-direction: column-reverse;
+        }
+        .bottom{
+
+            flex-direction: column-reverse;
+        }
+    }
 }

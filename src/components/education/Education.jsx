@@ -1,26 +1,13 @@
 import "./education.scss";
 import React, { useState } from "react";
+import { courses } from "./coursework_data";
+
+
+const gpa = 3.8;
 export default function Education() {
   const [showCourses, setShowCourses] = useState(false);
   const toggleCourses = () => setShowCourses(!showCourses);
   const [expandedCourse, setExpandedCourse] = useState(null);
-
-  const gpa = 3.8;
-  const courses = [
-    {
-      id: "cns",
-      name: "Computer and Network Security",
-      details:
-        "Learn about securing computer networks and handling cybersecurity threats.",
-    },
-    {
-      id: "ads",
-      name: "Advanced Data Structures",
-      details:
-        "Explore complex data structures and algorithms for optimizing data storage and retrieval.",
-    },
-    // Add more courses with similar structure
-  ];
 
   const toggleCourse = (id) => {
     if (expandedCourse === id) {
@@ -72,7 +59,18 @@ export default function Education() {
             >
               {course.name}
               {expandedCourse === course.id && (
-                <div className="course-details mt-1">{course.details}</div>
+                <div>
+                  <div className="tags">
+                    {course.tags.map(function (tag) {
+                      return (
+                        <div className="tag">
+                          <img src={tag} alt="" />
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <div className="course-details mt-1">{course.details}</div>
+                </div>
               )}
             </div>
           ))}

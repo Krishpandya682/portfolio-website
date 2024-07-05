@@ -1,4 +1,4 @@
-import { badges } from "./badges";
+import { badges } from "../../assets/badges";
 export const jobs = [
     {
       title: "Full Stack Developer",

@@ -7,7 +7,7 @@ export default function PersonalProjects(props) {
   return (
     <div className="personal_projects" id="personal_projects">
       <div className="title">
-        <h1>Personal Projects</h1>
+        <h1>Projects</h1>
       </div>
       <div class="horizontal-snap">
       {cardData.map((card, index) => (

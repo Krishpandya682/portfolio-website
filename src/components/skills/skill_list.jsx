@@ -41,8 +41,12 @@ export const sections = [
           { url: "https://www.vectorlogo.zone/logos/android/android-official.svg", name: "Android" },
           // Servers and Cloud Solutions
           { url: "https://www.svgrepo.com/download/354575/xampp.svg", name: "XAMPP" },
-          { url: "https://www.vectorlogo.zone/logos/ibm_cloud/ibm_cloud-icon.svg", name: "IBM Cloud" }
-      ]
+          { url: "https://www.vectorlogo.zone/logos/ibm_cloud/ibm_cloud-icon.svg", name: "IBM Cloud" },
+          { url: "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg", name: "Google Cloud Platform" },
+          { url: "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg", name: "Amazon Web Services" }
+      
+      
+        ]
   },
   {
       title: "Data Storage, Databases, and Blockchain Technologies",

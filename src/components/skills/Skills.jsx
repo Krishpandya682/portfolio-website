@@ -8,10 +8,10 @@ export default function Skills() {
   // Example data array
 
   return (
-    <div>
+    <div id = "skills" className="container skills">
       {sections.map((section, index) => (
         <div className="h-10" key={index}>
-         <div className="title">{section.title}</div>
+         {/* <div className="title">{section.title}</div> */}
           <Marquee
             loop={0}
             speed={50}
@@ -21,7 +21,7 @@ export default function Skills() {
             direction={index % 2 === 0 ? "left" : "right"} // Alternating direction
           >
             {section.items.map((item, idx) => (
-              <div key={idx} className="bg">
+              <div key={idx} className="bg shadow-lg p-3 mb-5 bg-white rounded">
                 <img src={item.url} className="icon" />
                 {item.name}
               </div>

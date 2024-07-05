@@ -6,7 +6,7 @@ import { jobs } from "./work_data";
 
 export default function WorkExperience(props) {
   return (
-    <div className="timeline-container">
+    <div id="work_experience" className="timeline-container">
       {jobs.map((job, index) => (
         <div className="timeline-entry" style={{ position: "relative" }}>
           <div className="job-card">
@@ -20,7 +20,7 @@ export default function WorkExperience(props) {
               <h4 className="company-name">{job.company}</h4>
             </div>
             <div className="bottom">
-              <div className="skills">
+              <div className="skills-list">
                 <Marquee
                   loop={0}
                   speed={50}

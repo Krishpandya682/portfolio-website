@@ -10,12 +10,12 @@ export default function Topbar({menuOpen, setMenuOpen}) {
             <div className="wrapper">
                 <div className="left">
                     <a href="#intro" className="logo">KP</a>
-                    <div className="itemContainer">
+                    {/* <div className="itemContainer">
                         <FontAwesomeIcon icon={faUser} className="icon"/>
                         <span>
                             +1 301 219 9869 
                         </span>
-                    </div>
+                    </div> */}
                     <div className="itemContainer">
                         <FontAwesomeIcon icon={faEnvelope} className="icon"/>
                         <span>

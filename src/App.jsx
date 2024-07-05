@@ -30,7 +30,7 @@ function App() {
         <PersonalProjects />
         <Skills />
         {/* <Extracurricular /> */}
-        <Contact />
+        {/* <Contact /> */}
         <Certificates/>
       </div>
     </div>

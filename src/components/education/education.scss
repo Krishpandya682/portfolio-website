@@ -191,7 +191,16 @@
             /* Subtle border for details area */
             border-radius: 4px;
         }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px 10px;
 
+            .tag {
+                margin: 1px;
+                padding: 0 3px;
+            }
+        }
     }
 
 

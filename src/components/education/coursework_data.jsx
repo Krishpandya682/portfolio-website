@@ -1,24 +1,29 @@
 import { badges } from "../../assets/badges";
+
 const cmsc131Tags = [
   badges["Java"],
   badges["Object-Oriented Programming"],
   badges["Software Design"],
 ];
+
 const cmsc132Tags = [
   badges["Data Structures"],
   badges["Algorithms"],
   badges["Java"],
 ];
+
 const cmsc216Tags = [
   badges["C Programming"],
   badges["Systems Programming"],
-  badges["Unix"],
+  badges["Linux"],
 ];
+
 const cmsc250Tags = [
   badges["Discrete Mathematics"],
   badges["Algorithms"],
   badges["Logic"],
 ];
+
 const cmsc330Tags = [
   badges["Programming Languages"],
   badges["Functional Programming"],
@@ -30,16 +35,19 @@ const cmsc351Tags = [
   badges["Time Complexity"],
   badges["Algorithm Analysis"],
 ];
+
 const cmsc320Tags = [
   badges["Data Science"],
   badges["Data Analysis"],
   badges["Machine Learning"],
 ];
+
 const cmsc424Tags = [
   badges["Database Systems"],
   badges["SQL"],
   badges["Data Management"],
 ];
+
 const cmsc414Tags = [
   badges["Computer Security"],
   badges["Cryptography"],
@@ -51,6 +59,7 @@ const cmsc420Tags = [
   badges["Data Structures"],
   badges["Computational Geometry"],
 ];
+
 const cmsc436Tags = [
   badges["Mobile Development"],
   badges["iOS"],

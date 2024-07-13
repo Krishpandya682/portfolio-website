@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./chatbot.scss";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClose } from "@fortawesome/free-solid-svg-icons";
+
 const Chatbot = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -12,7 +15,7 @@ const Chatbot = () => {
     <div className="chatbot-wrapper">
       <div className={`iframe-container ${isVisible ? "visible" : ""}`}>
         <button className="close-button" onClick={toggleChatbot}>
-          X
+        <FontAwesomeIcon icon={faClose} className="icon"/>
         </button>
         <iframe
           src="https://app.relevanceai.com/form/bcbe5a/99411144-2d25-424c-af8d-1222a61e6c69?version=latest"

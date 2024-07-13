@@ -19,18 +19,34 @@ Card {
     // gap: 10px;
     // order: 1;
     // background-color: black;
-    border-radius: 0 2% 2% 0;
+    
     height: 100%;
     align-self: center;
     justify-self: center;
     width: 60%;
     object-fit: contain;
-
-
+    overflow: hidden;
     .video {
         display: none;
         height: 100%;
         width: 100%;
+    }
+
+    .gridContainer {
+        display: flex;
+        overflow: hidden;
+        height: 100%;
+        margin: 0;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        .gridItem {
+            height: 50%;
+            overflow: hidden;
+        }
+        .fullImage {
+            height: 100% !important;
+
+        }
     }
 
     .row1,
@@ -64,8 +80,8 @@ Card {
         width: 100%;
 
         video {
-            height: 95%;
-            width: 95%;
+            height: 99%;
+            width: 99%;
         }
 
         img {

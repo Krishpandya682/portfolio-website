@@ -13,15 +13,22 @@
     flex-direction: column;
     justify-content: center;
     padding: 100px;
-    .bg {
-        // background-color: red;
-        padding: 10px 30px !important;
-        margin: 15px;
-        box-shadow: 9px 5px 5px;
+    overflow: hidden;
 
-        .icon {
-            height: 40px;
-            margin: 10px;
+    .marq {
+
+        overflow: hidden;
+
+        .bg {
+            // background-color: red;
+            padding: 10px 30px !important;
+            margin: 15px;
+            box-shadow: 9px 5px 5px;
+
+            .icon {
+                height: 40px;
+                margin: 10px;
+            }
         }
     }
 }

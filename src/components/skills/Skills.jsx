@@ -10,7 +10,7 @@ export default function Skills() {
   return (
     <div id = "skills" className="container skills">
       {sections.map((section, index) => (
-        <div className="h-10" key={index}>
+        <div className="h-10 marq" key={index}>
          {/* <div className="title">{section.title}</div> */}
           <Marquee
             loop={0}

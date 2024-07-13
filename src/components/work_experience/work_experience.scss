@@ -31,14 +31,14 @@
     background-size: 100% 100%;
     /* Ensures the image fits the element */
     background-position-y: -50px;
-
+    top: -25px;
     .job-card {
         display: flex;
         width: 100%;
         justify-content: center;
         align-items: center;
         height: 100%;
-
+        
         .top {
 
             width: 100%;

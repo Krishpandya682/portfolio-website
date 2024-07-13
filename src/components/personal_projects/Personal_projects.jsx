@@ -19,6 +19,7 @@ export default function PersonalProjects(props) {
           img2={card.img2}
           img3={card.img3}
           img4={card.img4}
+          images = {card.images}
           vid={card.vid}
           btn1={card.btn1}
           btn2={card.btn2}

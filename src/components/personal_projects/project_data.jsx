@@ -1,25 +1,33 @@
+import { badges } from "../../assets/badges";
+
 const schTags = [
-  "https://img.shields.io/badge/Flutter-54C5f8?style=for-the-badge&logo=flutter&logoColor=white",
-  "https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white",
-  "https://img.shields.io/badge/Firebase-F57C00?style=for-the-badge&logo=Firebase&logoColor=white",
-  "https://img.shields.io/badge/Android-A4C639?style=for-the-badge&logo=android&logoColor=white",
-  "https://img.shields.io/badge/Android%20Studio-669933.svg?style=for-the-badge&logo=android-studio&logoColor=white",
+  badges["Flutter"],
+  badges["Dart"],
+  badges["Firebase"],
+  badges["Android"],
+  badges["Android Studio"]
 ];
 
 const ftcTags = [
-  "https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white",
-  "https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white",
-  "",
+  badges["Ethereum"],
+  badges["Solidity"]
+];
+
+const othTags = [
+  badges["Python"],
+  badges["Numpy"],
+  badges["Pygame"],
 ];
 
 export const cardData = [
   {
     title: "Scavenger Hunt",
-    description: "This is the Scavenger Hunt Android App",
+    description: "Designed and developed an interactive quiz application using Flutter, available on the Google PlayStore. Integrated Firestore Database for real-time data management and Firebase Authentication for secure user access, enhancing both functionality and security.",
     img1: "sch1",
     img2: "sch3",
     img3: "sch2",
     img4: "sch4",
+    images : ["sch1","sch2","sch3","sch4"],
     vid: "",
     btn1: (
       <object data="assets/google-play.svg" width="30" height="30"></object>
@@ -32,11 +40,12 @@ export const cardData = [
   },
   {
     title: "FitCoin Token",
-    description: "This is the FitCoin Token Wallet WebApp",
+    description: "Created and deployed an ERC-20 token to the Ethereum blockchain using Solidity and Web3. Developed and tested the token and token sale smart contracts with Truffle and Ganache, ensuring robust functionality. Designed a website to host the Initial Coin Offering (ICO), integrating Metamask for seamless web3 interaction and secure payment processing.",
     img1: "ftc1",
     img2: "ftc3",
     img3: "ftc4",
     img4: "ftc2",
+    images : ["ftc1","ftc2","ftc3","ftc4"],
     vid: "FTCVid.mp4",
     btn1: <object data="assets/website.svg" width="40" height="40"></object>,
     btn2: <object data="assets/github.svg" width="40" height="40"></object>,
@@ -46,16 +55,18 @@ export const cardData = [
   },
   {
     title: "Othello AI",
-    description: "Othello AI WebApp",
+    description: "Developed an AI agent for Othello using the Minimax algorithm with Alpha-Beta pruning and NumPy for optimized performance. Transitioned from a reinforcement learning model to Minimax for better game state management. Enhanced AI decision-making and performance across various scenarios. Created an interactive game interface with Pygame to demonstrate advanced AI strategies.",
     img1: "oth1",
     img2: "oth2",
     img3: "oth3",
     img4: "oth4",
+
+    images : ["oth1","oth2","oth3","oth4"],
     vid: "Othello.mp4",
     // btn1: <object data="assets/website.svg" width="40" height="40"></object>,
     // btn2: <object data="assets/github.svg" width="40" height="40"></object>,
     // btnLink1: "https://krishpandya682.github.io/FitCoinTokenSale/",
     // btnLink2: "https://github.com/Krishpandya682/FitCoinTokenSale",
-    tags: ftcTags,
+    tags: othTags,
   },
 ];

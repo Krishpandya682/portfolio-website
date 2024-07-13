@@ -1,8 +1,10 @@
 .certifications {
   display: flex;
   flex-direction: column;
+  background-color: black;
   .title{
     height: 10%;
+    color: white;
   }
   .gallery {
     height: 90%;

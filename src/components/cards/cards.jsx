@@ -5,6 +5,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { Grid } from "@mui/material";
 import "./cards.scss";
 
 export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
@@ -20,7 +21,13 @@ export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
     mobile_size = width < 770;
     // console.log(mobile_size);
   };
-
+  const getGridSize = (index) => {
+    if (images.length === 1) return 12;
+    if (images.length === 2) return 12;
+    if (images.length === 3) return index < 2 ? 6 : 12;
+    if (images.length >= 4) return 6;
+    return 6;
+  };
   window.addEventListener("resize", updateDimensions);
   var title = props.title;
   var description = props.description;
@@ -28,6 +35,7 @@ export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
   var img2 = props.img2;
   var img3 = props.img3;
   var img4 = props.img4;
+  var images = props.images;
   var vid = props.vid;
   var btn1 = props.btn1;
   var btn2 = props.btn2;
@@ -51,41 +59,28 @@ export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
               <source src={"./assets/" + vid} type="video/mp4" />
             </video>
           </div>
-
-          <div className="row1">
-            <CardMedia
-              component="img"
-              // height="400"
-              sx={{ padding_left: 1, object_fit: "contain" }}
-              image={"./assets/" + img1 + ".png"}
-              alt={img1}
-            />
-
-            <CardMedia
-              component="img"
-              // height="400"
-              sx={{ padding_left: 1, object_fit: "contain" }}
-              image={"./assets/" + img2 + ".png"}
-              alt={img2}
-            />
-          </div>
-          <div className="row2">
-            <CardMedia
-              component="img"
-              // height="400"
-              sx={{ padding_left: 1, object_fit: "contain" }}
-              image={"./assets/" + img3 + ".png"}
-              alt={img3}
-            />
-
-            <CardMedia
-              component="img"
-              // height="400"
-              sx={{ padding_left: 1, object_fit: "contain" }}
-              image={"./assets/" + img4 + ".png"}
-              alt={img4}
-            />
-          </div>
+         
+          <Grid className="gridContainer" container spacing={0.125}>
+            {images.map((img, index) => (
+              <Grid
+                className={`gridItem ${images.length === 1 ? "fullImage" : ""}`}
+                item
+                xs={getGridSize(index)}
+                key={index}
+              >
+                <CardMedia
+                  component="img"
+                  sx={{
+                    paddingLeft: 0.125,
+                    objectFit: "contain",
+                    height: "100%",
+                  }}
+                  image={`./assets/${img}.png`}
+                  alt={img}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </div>
         <div className="content">
           <div className="top">

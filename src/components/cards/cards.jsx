@@ -97,7 +97,7 @@ export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
               {tags.map(function (tag) {
                 return (
                   <div className="tag">
-                    <img src={tag} alt="" />
+                    <img src={tag} alt="" loading="lazy"/>
                   </div>
                 );
               })}
@@ -151,7 +151,7 @@ export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
               {tags.map(function (tag) {
                 return (
                   <div className="tag">
-                    <img src={tag} alt="" />
+                    <img src={tag} alt="" loading="lazy"/>
                   </div>
                 );
               })}

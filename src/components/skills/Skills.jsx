@@ -22,7 +22,7 @@ export default function Skills() {
           >
             {section.items.map((item, idx) => (
               <div key={idx} className="bg shadow-lg p-3 mb-5 bg-white rounded">
-                <img src={item.url} className="icon" />
+                <img src={item.url} className="icon" loading="lazy"/>
                 {item.name}
               </div>
             ))}

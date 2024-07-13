@@ -11,7 +11,7 @@ export default function WorkExperience(props) {
           <div className="job-card">
             <div className="top">
               <div className="icon">
-                <img src={"https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2F" + job.icon + "?alt=media"} alt={job.company + "_logo"} />
+                <img src={"https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2F" + job.icon + "?alt=media"} alt={job.company + "_logo"} loading="lazy"/>
               </div>
 
               <p className="year">{job.year}</p>
@@ -31,7 +31,7 @@ export default function WorkExperience(props) {
                   <div className="tags">
                     {job.skills.map((tag, tagIndex) => (
                       <div className="tag" key={tagIndex}>
-                        <img src={tag} alt="" />
+                        <img src={tag} alt="" loading="lazy"/>
                       </div>
                     ))}
                   </div>

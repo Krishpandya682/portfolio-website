@@ -34,7 +34,7 @@ export default function Intro(props) {
                     />
                     </h3>
                 </div>
-                <a href="#education"><img src="https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fdown.png?alt=media" alt="" /></a>
+                <a href="#education"><img src="https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fdown.png?alt=media" alt="" loading="lazy"/></a>
             </div>
         </div>
     )

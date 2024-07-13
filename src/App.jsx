@@ -28,10 +28,11 @@ function App() {
         <Education />
         <WorkExperience />
         <PersonalProjects />
-        <Skills />
         {/* <Extracurricular /> */}
         {/* <Contact /> */}
         <Certificates/>
+        <Skills />
+
       </div>
     </div>
     </AnimatePresence>

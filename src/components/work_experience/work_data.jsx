@@ -4,7 +4,7 @@ export const jobs = [
     title: "Full Stack Developer",
     company: "Adele H. Stamp Student Union",
     year: "June 2022 - Present",
-    icon: "stamp_logo.jpeg",
+    icon: "stamp_logo.webp",
     bullets: [
       {
         top: "Upgraded the EventApp, an internal event management tool for the IT Department built with ASP.NET, C#, and MySQL, to leverage EMS Platform Services RESTful API achieving an enhanced user experience due to",
@@ -56,7 +56,7 @@ export const jobs = [
     title: "Full Stack Developer",
     company: "Adele H. Stamp Student Union",
     year: "June 2022 - Present",
-    icon: "stamp_logo.jpeg",
+    icon: "stamp_logo.webp",
     bullets: [
       {
         top: "Averaging",
@@ -111,7 +111,7 @@ export const jobs = [
     title: "Algorithms Teaching Assistant",
     company: "Department of Computer Science, UMD",
     year: "May 2023 - May 2024",
-    icon: "dept_cs_logo.jpeg",
+    icon: "dept_cs_logo.webp",
     bullets: [
       {
         top: "Offered weekly office hours for a class of",
@@ -152,7 +152,7 @@ export const jobs = [
     title: "Full-Stack Developer",
     company: "Govardhan Ecovillage · Internship",
     year: "Jun 2023 - Aug 2023",
-    icon: "gev_logo.jpeg",
+    icon: "gev_logo.webp",
     bullets: [
       {
         top: "Contributed to the frontend and backend development of a data collection application aimed at promoting sustainable and innovative solutions, impacting",
@@ -187,7 +187,7 @@ export const jobs = [
   //   title: "Student IT Technician",
   //   company: "Adele H. Stamp Student Union",
   //   year: "September 2020 - June 2022",
-  //   icon: "stamp_logo.jpeg",
+  //   icon: "stamp_logo.webp",
   //   bullets: [
   //     {
   //       top: "Managed and maintained 11 university subdomains, handling high-traffic volumes averaging",

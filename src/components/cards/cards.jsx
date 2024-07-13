@@ -75,7 +75,7 @@ export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
                     objectFit: "contain",
                     height: "100%",
                   }}
-                  image={`https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2F${img}.png?alt=media`}
+                  image={`https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2F${img}.webp?alt=media`}
                   alt={img}
                 />
               </Grid>
@@ -200,7 +200,7 @@ export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
                     objectFit: "contain",
                     height: "100%",
                   }}
-                  image={`https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2F${img}.png?alt=media`}
+                  image={`https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2F${img}.webp?alt=media`}
                   alt={img}
                 />
               </Grid>

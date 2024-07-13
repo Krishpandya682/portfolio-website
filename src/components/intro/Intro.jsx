@@ -14,7 +14,7 @@ export default function Intro(props) {
         <div className='intro' id="intro">
             <div className="left">
                 <div className="imgContainer">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fkrish.png?alt=media" alt="Display Pic" loading="lazy" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fkrish.webp?alt=media" alt="Display Pic" loading="lazy" />
                 </div>
             </div>
             <div className="right">
@@ -34,7 +34,7 @@ export default function Intro(props) {
                     />
                     </h3>
                 </div>
-                <a href="#education"><img src="https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fdown.png?alt=media" alt="" loading="lazy"/></a>
+                <a href="#education"><img src="https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fdown.webp?alt=media" alt="" loading="lazy"/></a>
             </div>
         </div>
     )

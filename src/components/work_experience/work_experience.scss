@@ -1,6 +1,6 @@
 .timeline-container {
 
-    // background-image: url("../../../public/assets/umd2.jpg");
+    // background-image: url("https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fumd2.jpg");
     // background-color: red;
     display: flex;
     overflow-x: auto;
@@ -122,17 +122,17 @@
 
 /* Specific background for the first entry */
 .timeline-entry:first-child {
-    background-image: url("../../../public/assets/timeline_start.svg") !important;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Ftimeline_start.svg?alt=media") !important;
 }
 
 /* Specific background for the last entry */
 .timeline-entry:last-child {
-    background-image: url("../../../public/assets/timeline_end.svg") !important;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Ftimeline_end.svg?alt=media") !important;
 }
 
 /* Default background for all other entries */
 .timeline-entry:nth-child(odd) {
-    background-image: url("../../../public/assets/timeline_mid_top.svg");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Ftimeline_mid_top.svg?alt=media");
 
     .job-card {
 
@@ -152,7 +152,7 @@
 }
 
 .timeline-entry:nth-child(even) {
-    background-image: url("../../../public/assets/timeline_mid_bottom.svg");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Ftimeline_mid_bottom.svg?alt=media");
 
     .job-card {
 

@@ -11,7 +11,7 @@ export default function WorkExperience(props) {
           <div className="job-card">
             <div className="top">
               <div className="icon">
-                <img src={"./assets/" + job.icon} alt={job.company + "_logo"} />
+                <img src={"https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2F" + job.icon + "?alt=media"} alt={job.company + "_logo"} />
               </div>
 
               <p className="year">{job.year}</p>

@@ -56,7 +56,7 @@ export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
         <div className={"media" + (vid.length > 0 ? " hoverable" : "")}>
           <div className="video">
             <video autoPlay loop muted>
-              <source src={"./assets/" + vid} type="video/mp4" />
+              <source src={"https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2F" + vid + "?alt=media"} type="video/mp4" />
             </video>
           </div>
          
@@ -75,7 +75,7 @@ export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
                     objectFit: "contain",
                     height: "100%",
                   }}
-                  image={`./assets/${img}.png`}
+                  image={`https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2F${img}.png?alt=media`}
                   alt={img}
                 />
               </Grid>
@@ -181,45 +181,33 @@ export default function MediaCard(props, { width, mobileSize, setMobileSize }) {
         <div className={"media" + (vid.length > 0 ? " hoverable" : "")}>
           <div className="video">
             <video autoPlay loop muted>
-              <source src={"./assets/" + vid} type="video/mp4" />
+              <source src={"https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2F" + vid + "?alt=media"} type="video/mp4" />
             </video>
           </div>
-
-          <div className="row1">
-            <CardMedia
-              component="img"
-              // height="400"
-              sx={{ padding_left: 1, object_fit: "contain" }}
-              image={"./assets/" + img1 + ".png"}
-              alt={img1}
-            />
-
-            <CardMedia
-              component="img"
-              // height="400"
-              sx={{ padding_left: 1, object_fit: "contain" }}
-              image={"./assets/" + img2 + ".png"}
-              alt={img2}
-            />
-          </div>
-          <div className="row2">
-            <CardMedia
-              component="img"
-              // height="400"
-              sx={{ padding_left: 1, object_fit: "contain" }}
-              image={"./assets/" + img3 + ".png"}
-              alt={img3}
-            />
-
-            <CardMedia
-              component="img"
-              // height="400"
-              sx={{ padding_left: 1, object_fit: "contain" }}
-              image={"./assets/" + img4 + ".png"}
-              alt={img4}
-            />
-          </div>
-        </div>
+         
+          <Grid className="gridContainer" container spacing={0.125}>
+            {images.map((img, index) => (
+              <Grid
+                className={`gridItem ${images.length === 1 ? "fullImage" : ""}`}
+                item
+                xs={getGridSize(index)}
+                key={index}
+              >
+                <CardMedia
+                  component="img"
+                  sx={{
+                    paddingLeft: 0.125,
+                    objectFit: "contain",
+                    height: "100%",
+                  }}
+                  image={`https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2F${img}.png?alt=media`}
+                  alt={img}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        
+         </div>
       </Card>
     );
   }

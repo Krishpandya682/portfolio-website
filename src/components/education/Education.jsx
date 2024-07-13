@@ -22,7 +22,7 @@ export default function Education() {
       <div className="left_panel col-md-5 p-2">
         <div className="left-panel-content row p-4">
           <div>
-            <img src="./assets/umd_logo.svg"></img>
+            <img src="https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fumd_logo.svg?alt=media"></img>
           </div>
           <div className="degree_text">
             <div className="degree-title">Bachelor's Of Science</div>

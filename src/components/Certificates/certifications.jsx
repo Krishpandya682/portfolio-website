@@ -17,7 +17,7 @@ const Certificates = ({ images }) => {
             rel="noopener noreferrer"
             className="gallery-item"
           >
-            <img src={"./assets/certificates/" + image.src} alt={image.name} />
+            <img src={"https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fcertificates%2F" + image.src + "?alt=media"} alt={image.name} loading="lazy"/>
           </a>
         ))}
       </div>

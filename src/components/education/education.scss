@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+
 .education {
     background-image: url("../../../public/assets/umd2.jpg");
     background-size: cover;
-    /* Ensure the background image covers the entire container */
     background-position: center;
-    /* Center the background image */
     background-repeat: no-repeat;
-    /* Do not repeat the background image */
     background-color: black;
     display: flex;
     justify-content: center;
@@ -13,19 +12,13 @@
 
     .left_panel {
         position: relative;
-        /* Needed for absolute positioning of the child elements */
         background-color: rgba(0, 0, 0, 0.8);
-        /* Using RGBA for better text contrast and readability */
         backdrop-filter: blur(5px);
-        /* Apply a blur effect to the background for readability */
         border-top-right-radius: 10pt;
         border-bottom-right-radius: 10pt;
         height: 100%;
-        /* Ensures the panel takes full height of its container */
         display: flex;
-        /* Using flex to ensure children can fill the height */
         flex-direction: column;
-        /* Align children in a column */
 
         .left-panel-content {
             display: flex;
@@ -43,6 +36,7 @@
             /* Ensures it takes full height available */
             position: relative;
             /* Needed for absolute positioning of the download button */
+            padding-right: 0;
 
         }
 
@@ -57,35 +51,38 @@
             width: 100%;
             /* Ensure full width is used for alignment */
             padding-top: 20px;
-
-            h1,
-            h2 {
-                margin: 4px 0;
-                /* Add space above and below headings */
-                color: white;
-                /* Slightly darker color for headings */
+            color: white;
+            font-family: 'Cardo', serif !important;
+            letter-spacing: .09rem;
+            
+            .degree-title {
+                font-size: 3em;
+                font-weight: bold;
+                margin-bottom: 0.1em;
             }
 
-            h1 {
-                font-size: 40px;
-                /* Larger font size for primary headings */
-                font-weight: 600;
-                /* Semi-bold font weight */
+            .degree-major {
+                font-size: 2em;
+                font-weight: bolder;
+                margin-bottom: 0em;
             }
 
-            h2 {
-                font-size: 32px;
-                /* Smaller font size for secondary headings */
-                font-weight: normal;
-                /* Normal font weight */
+            .degree-minor {
+                font-size: 1.5em;
+                margin-bottom: 0.5em;
             }
 
-            h1.gpa {
-                font-size: 44px;
-                /* Slightly larger font size */
-                display: inline-block;
-                /* Make the GPA block inline */
+            .degree-year {
+                font-size: 2em;
+                font-weight: bold;
+                margin-bottom: 0.1em;
             }
+
+            .gpa {
+                font-size: 2em;
+                font-weight: bold;
+            }
+
         }
 
         .download-button {
@@ -161,6 +158,7 @@
         width: 80%;
         transition: all 1s ease;
         padding: 0.5rem;
+
         &.active {
             left: 0;
         }
@@ -191,6 +189,7 @@
             /* Subtle border for details area */
             border-radius: 4px;
         }
+
         .tags {
             display: flex;
             flex-wrap: wrap;

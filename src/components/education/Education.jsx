@@ -17,6 +17,7 @@ export default function Education() {
   };
 
   return (
+    
     <div className="education" id="education">
       <div className="left_panel col-md-5 p-2">
         <div className="left-panel-content row p-4">
@@ -24,11 +25,11 @@ export default function Education() {
             <img src="./assets/umd_logo.svg"></img>
           </div>
           <div className="degree_text">
-            <h1>Bachelor's Of Science</h1>
-            <h1>Major in Computer Science</h1>
-            <h2>Minor in Business Analytics</h2>
-            <h1>2020 - 2024</h1>
-            <h1 className="gpa">GPA: {gpa}</h1>
+            <div className="degree-title">Bachelor's Of Science</div>
+            <div className="degree-major">Major in Computer Science</div>
+            <div className="degree-minor">Minor in Business Analytics</div>
+            <div className="degree-year">2020 - 2024</div>
+            <div className="gpa">GPA: {gpa}</div>
           </div>
           <div>
             <a

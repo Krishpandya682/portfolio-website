@@ -2,23 +2,26 @@ export const badges = {
   "ASP.NET":
     "https://img.shields.io/badge/ASP.NET-5C2D91?style=for-the-badge&logo=dot-net&logoColor=white",
   "C#": "https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white",
+  SASS: "https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white",
+  TypeScript:
+    "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
   MySQL:
     "https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white",
   PHP: "https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white",
-  "HTML/CSS":
+  "HTML":
     "https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white",
   JavaScript:
     "https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black",
   Drupal:
-    "https://img.shields.io/badge/Drupal-0678BE?style=for-the-badge&logo=drupal&logoColor=white",
+    "https://img.shields.io/badge/drupal-%230678BE.svg?style=for-the-badge&logo=drupal&logoColor=white",
   "Facebook API":
     "https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white",
   "Twitter API":
     "https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white",
-  Testing:
-    "https://img.shields.io/badge/Testing-9E9E9E?style=for-the-badge&logo=testing-library&logoColor=white",
-  Teamwork:
-    "https://img.shields.io/badge/Teamwork-FFC300?style=for-the-badge&logo=teamwork&logoColor=black",
+  React:
+    "https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB",
+  Django:
+    "https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green",
   "Web Services":
     "https://img.shields.io/badge/Web_Services-0078D7?style=for-the-badge&logo=web&logoColor=white",
   "Software Development":
@@ -37,6 +40,12 @@ export const badges = {
     "https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white",
   Teaching:
     "https://img.shields.io/badge/Teaching-0078D7?style=for-the-badge&logo=teach&logoColor=white",
+  Github:
+    "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white",
+  Postman:
+    "https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white",
+  Swagger:
+    "https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white",
   Algorithms:
     "https://img.shields.io/badge/Algorithms-4CAF50?style=for-the-badge&logoColor=white",
   "Data Structures":
@@ -75,7 +84,8 @@ export const badges = {
     "https://img.shields.io/badge/Object_Oriented_Programming-4CAF50?style=for-the-badge&logo=oop&logoColor=white",
   "Systems Programming":
     "https://img.shields.io/badge/Systems_Programming-FF5733?style=for-the-badge&logo=systems-programming&logoColor=white",
-  Linux: "https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black",
+  Linux:
+    "https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black",
   "Discrete Mathematics":
     "https://img.shields.io/badge/Discrete_Mathematics-FFD700?style=for-the-badge&logo=math&logoColor=black",
   Logic:
@@ -125,8 +135,24 @@ export const badges = {
     "https://img.shields.io/badge/Robotics-DC143C?style=for-the-badge&logo=robot&logoColor=white",
   "Control Systems":
     "https://img.shields.io/badge/Control_Systems-800000?style=for-the-badge&logo=control&logoColor=white",
+  Ruby: "https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white",
+  Rust: "https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white",
+  OCaml:
+    "https://img.shields.io/badge/OCaml-%23E98407.svg?style=for-the-badge&logo=ocaml&logoColor=white",
+  Jupyter:
+    "https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white",
+  Anaconda:
+    "https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white",
+  Docker:
+    "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white",
+  ApacheSpark:
+    "https://img.shields.io/badge/Apache%20Spark-FDEE21?style=flat-square&logo=apachespark&logoColor=black",
+  XCode:
+    "https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white",
+  Assembly:
+    "https://img.shields.io/badge/assembly%20script-%23000000.svg?style=for-the-badge&logo=assemblyscript&logoColor=white",
   "C Programming":
-    "https://img.shields.io/badge/C_Programming-A8B9CC?style=for-the-badge&logo=c&logoColor=black",
+    "https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white",
   iOS: "https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white",
   Swift:
     "https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white",
@@ -138,7 +164,7 @@ export const badges = {
   Firebase:
     "https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white",
   "Android Studio":
-    "https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white",
+    "https://img.shields.io/badge/android%20studio-346ac1?style=for-the-badge&logo=android%20studio&logoColor=white",
   Ethereum:
     "https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white",
   Solidity:
@@ -147,4 +173,6 @@ export const badges = {
     "https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white",
   Pygame:
     "https://img.shields.io/badge/Pygame-00B140?style=for-the-badge&logo=python&logoColor=white",
+  Slack:
+    "https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white",
 };

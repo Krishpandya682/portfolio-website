@@ -14,7 +14,7 @@ const cmsc132Tags = [
 
 const cmsc216Tags = [
   badges["C Programming"],
-  badges["Systems Programming"],
+  badges["Assembly"],
   badges["Linux"],
 ];
 
@@ -25,9 +25,9 @@ const cmsc250Tags = [
 ];
 
 const cmsc330Tags = [
-  badges["Programming Languages"],
-  badges["Functional Programming"],
-  badges["Syntax and Semantics"],
+  badges["Ruby"],
+  badges["Rust"],
+  badges["OCaml"],
 ];
 
 const cmsc351Tags = [
@@ -37,39 +37,39 @@ const cmsc351Tags = [
 ];
 
 const cmsc320Tags = [
-  badges["Data Science"],
-  badges["Data Analysis"],
-  badges["Machine Learning"],
+  badges["Python"],
+  badges["Jupyter"],
+  badges["Anaconda"],
 ];
 
 const cmsc424Tags = [
-  badges["Database Systems"],
+  badges["Docker"],
   badges["SQL"],
-  badges["Data Management"],
+  badges["ApacheSpark"],
 ];
 
 const cmsc414Tags = [
   badges["Computer Security"],
-  badges["Cryptography"],
+  badges["C Programming"],
   badges["Network Security"],
 ];
 
 const cmsc420Tags = [
-  badges["Algorithms"],
+  badges["Java"],
   badges["Data Structures"],
   badges["Computational Geometry"],
 ];
 
 const cmsc436Tags = [
-  badges["Mobile Development"],
+  badges["XCode"],
   badges["iOS"],
   badges["Swift"],
 ];
 
 const cmsc335Tags = [
   badges["JavaScript"],
-  badges["Web Development"],
-  badges["Full-Stack Development"],
+  badges["React"],
+  badges["HTML"],
 ];
 
 const cmsc498ETags = [

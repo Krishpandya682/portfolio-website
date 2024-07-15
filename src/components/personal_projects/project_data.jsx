@@ -30,9 +30,9 @@ export const cardData = [
     images : ["sch1","sch2","sch3","sch4"],
     vid: "",
     btn1: (
-      <object data="assets/google-play.svg" width="30" height="30"></object>
+      <object data="https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fgoogle-play.svg?alt=media" width="30" height="30"></object>
     ),
-    btn2: <object data="assets/github.svg" width="40" height="40"></object>,
+    btn2: <object data="https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fgithub.svg?alt=media" width="40" height="40"></object>,
     btnLink1:
       "https://play.google.com/store/apps/details?id=com.herokuapp.scavengerhuntapp682",
     btnLink2: "https://github.com/Krishpandya682/scavenger_hunt",
@@ -47,8 +47,11 @@ export const cardData = [
     img4: "ftc2",
     images : ["ftc1","ftc2","ftc3","ftc4"],
     vid: "FTCVid.mp4",
-    btn1: <object data="assets/website.svg" width="40" height="40"></object>,
-    btn2: <object data="assets/github.svg" width="40" height="40"></object>,
+    btn1: (
+      <object data="https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fwebsite.svg?alt=media" width="30" height="30"></object>
+    ),
+    btn2: <object data="https://firebasestorage.googleapis.com/v0/b/krishpandyaportfolio.appspot.com/o/assets%2Fgithub.svg?alt=media" width="40" height="40"></object>,
+   
     btnLink1: "https://krishpandya682.github.io/FitCoinTokenSale/",
     btnLink2: "https://github.com/Krishpandya682/FitCoinTokenSale",
     tags: ftcTags,

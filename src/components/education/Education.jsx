@@ -45,7 +45,7 @@ export default function Education() {
       <div className="col-md-7 coursework_section">
         <div className="p-2">
           <button className="expand-button" onClick={toggleCourses}>
-            {showCourses ? "Hide Courses" : "Expand All"}
+            {showCourses ? "Hide Courses" : "Show Relevant Courses"}
           </button>
         </div>
 

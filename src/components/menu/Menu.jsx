@@ -24,14 +24,15 @@ export default function Menu({ menuOpen, setMenuOpen }) {
         <li onClick={() => setMenuOpen(false)}>
           <a href="#academic_projects">Academic Projects</a>
         </li> */}
-        <li onClick={() => setMenuOpen(false)}>
-          <a href="#skills">Skills</a>
-        </li>
+
 
         <li onClick={() => setMenuOpen(false)}>
           <a href="#certifications">Certifications </a>
         </li>
-
+        
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="#skills">Skills</a>
+        </li>
         {/* <li onClick={() => setMenuOpen(false)}>
           <a href="#contact">Contact</a>
         </li> */}

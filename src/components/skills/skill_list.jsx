@@ -59,7 +59,7 @@ export const sections = [
           { url: "https://www.vectorlogo.zone/logos/apache_spark/apache_spark-icon.svg", name: "Apache Spark" },
           // Blockchain Technologies
           { url: "https://www.vectorlogo.zone/logos/ethereum/ethereum-icon.svg", name: "Ethereum" },
-          { url: "https://web3js.org/static/media/truffle.188e1b93924334150df9.png", name: "Truffle" },
+          { url: "https://asset.brandfetch.io/idtfqb6wGR/idjC07ctIT.png", name: "Truffle" },
           { url: "https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg", name: "Metamask" }
       ]
   }
